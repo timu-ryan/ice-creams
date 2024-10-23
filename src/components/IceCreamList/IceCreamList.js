@@ -16,7 +16,7 @@ const IceCreamList = ({list, isSavedPage, setPrice, setNumber}) => {
   
   return (
     <>
-      {!isSavedPage && <label for="icecream" className='input-label'>введите название:</label>}
+      {!isSavedPage && <label htmlFor="icecream" className='input-label'>введите название:</label>}
       {!isSavedPage && <input id='icecream' type='text' value={inputValue} onChange={handleInputChange} className='input'/>}
       <ul className='icecream-list'>
         {list.filter((item) => {
