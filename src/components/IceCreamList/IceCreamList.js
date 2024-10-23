@@ -33,7 +33,7 @@ const IceCreamList = ({list, isSavedPage}) => {
             />)
         })} 
       </ul>
-      {(visibleNumber < list.length) && <button onClick={addMoreClick} className='show-more-btn'>показать еще</button>}
+      {(visibleNumber < list.length && !isSavedPage) && <button onClick={addMoreClick} className='show-more-btn'>показать еще</button>}
     </>
   )
 }
