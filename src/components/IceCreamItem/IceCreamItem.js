@@ -3,7 +3,7 @@ import './IceCreamItem.css'
 
 // const IceCreamItem = ({id, title, cost, imageSrc, isSaved}) => {
 
-const IceCreamItem = ({iceCreamItem, isSavedPage}) => {
+const IceCreamItem = ({iceCreamItem, isSavedPage, setPrice, setNumber}) => {
   // check is saved!
   const {id, title, cost, image} = iceCreamItem;
   
@@ -12,11 +12,27 @@ const IceCreamItem = ({iceCreamItem, isSavedPage}) => {
   function addToFavourites() {
     localStorage.setItem(id, JSON.stringify(iceCreamItem));
     setIsSaved(true)
+    setPrice(price => {
+      localStorage.setItem('totalPrice', price + cost);
+      return price + cost;
+    });
+    setNumber(number => { 
+      localStorage.setItem('totalNumber', number + 1);
+      return number + 1;
+    });
   }
 
   function removeToFavourites() {
     localStorage.removeItem(id);
     setIsSaved(false)
+    setPrice(price => {
+      localStorage.setItem(id, price - cost);
+      return price - cost;
+    });
+    setNumber(number => { 
+      localStorage.setItem(id, number - 1);
+      return number - 1;
+    });
   }
 
   return (

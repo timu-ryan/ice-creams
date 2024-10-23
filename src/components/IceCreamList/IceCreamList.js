@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './IceCreamList.css'
 import IceCreamItem from '../IceCreamItem/IceCreamItem'
 
-const IceCreamList = ({list, isSavedPage}) => {
+const IceCreamList = ({list, isSavedPage, setPrice, setNumber}) => {
 
   const [visibleNumber, setVisibleNumber] = useState(10);
 
@@ -30,6 +30,8 @@ const IceCreamList = ({list, isSavedPage}) => {
               key={id}
               iceCreamItem={iceCreamItem}
               isSavedPage={isSavedPage}
+              setPrice={setPrice}
+              setNumber={setNumber}
             />)
         })} 
       </ul>

@@ -8,6 +8,7 @@ import { useEffect, useState } from 'react';
 import IceCreamList from '../IceCreamList/IceCreamList';
 import Footer from '../Footer/Footer';
 import PageNotFound from '../PageNotFound/PageNotFound';
+import ShoppingResult from '../ShoppingResult/ShoppingResult';
 
 const API_URL = 'https://webapi.omoloko.ru/api/v1/products';
 
@@ -28,6 +29,8 @@ async function fetchData(url) {
 function App() {
   const [allIcecreams, setAllIcecream] = useState([]);
   // const [savedIcecreams, setSavedIcecreams] = useState([]);
+  const [price, setPrice] = useState(localStorage.getItem('totalPrice') || 0);
+  const [number, setNumber] = useState(localStorage.getItem('totalNumber') || 0);
 
   // add isSaved to all items in list
   useEffect(() => {
@@ -40,11 +43,8 @@ function App() {
         //   }
         // })
       }
-
     })
   }, [])
-  
-
 
   return (
     <div className='app'>
@@ -54,13 +54,25 @@ function App() {
         <Route path="/" element={
           <>
             <Navigation />
-            <IceCreamList list={allIcecreams} isSavedPage={false} />
+            <ShoppingResult price={price} number={number} />
+            <IceCreamList 
+              list={allIcecreams} 
+              isSavedPage={false} 
+              setNumber={setNumber}
+              setPrice={setPrice}
+            />
           </>
         }/>
         <Route path="/saved-icecreams" element={
           <>
             <Navigation />
-            <IceCreamList list={allIcecreams} isSavedPage={true} />
+            <ShoppingResult price={price} number={number} />
+            <IceCreamList 
+              list={allIcecreams} 
+              isSavedPage={true} 
+              setNumber={setNumber}
+              setPrice={setPrice}
+            />
           </>
         }/>
         <Route path="*" element={
