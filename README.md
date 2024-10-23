@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+# Мороженая
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Это простое React приложение, использующее `react-router-dom` для маршрутизации на стороне клиента. Следуйте инструкциям ниже, чтобы настроить и запустить проект на вашем компьютере.
 
-## Available Scripts
+## Требования
 
-In the project directory, you can run:
+Перед запуском приложения убедитесь, что у вас установлено следующее программное обеспечение:
 
-### `npm start`
+- [Node.js](https://nodejs.org/en/) (рекомендуется версия 14.x или выше)
+- [npm](https://www.npmjs.com/) или [yarn](https://yarnpkg.com/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Вы можете проверить, что Node.js и npm установлены, выполнив следующие команды в терминале:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```bash
+node -v
+npm -v
+```
+## Установка
 
-### `npm test`
+1. Клонируйте репозиторий на ваш компьютер:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+git clone https://github.com/timu-ryan/roboline-task.git
+```
+2. Перейдите в папку с проектом:
 
-### `npm run build`
+```bash
+cd roboline-task
+```
+3. Установите необходимые зависимости:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Если вы используете npm:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+npm install
+```
+Или, если вы используете yarn:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+yarn install
+```
+## Запуск приложения
 
-### `npm run eject`
+Чтобы запустить сервер разработки, выполните команду:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Для npm:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+npm start
+```
+Или для yarn:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
 
-## Learn More
+yarn start
+```
+Приложение откроется по адресу http://localhost:3000 по умолчанию.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Настройка React Router
 
-### Code Splitting
+Дополнительная конфигурация
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Убедитесь, что react-router-dom установлен. Если он не установлен, вы можете установить его с помощью следующей команды:
 
-### Analyzing the Bundle Size
+Для npm:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+npm install react-router-dom
+```
+Или для yarn:
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+yarn add react-router-dom
+```
