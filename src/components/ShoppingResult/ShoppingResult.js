@@ -5,7 +5,7 @@ const ShoppingResult = ({price, number}) => {
   return (
     <section className='shopping-result'>
       <p>Всего товаров: {number}</p>
-      <p>Общая цена: {price}</p>
+      <p>Общая цена: {price}р</p>
     </section>
   )
 }
