@@ -26,11 +26,11 @@ const IceCreamItem = ({iceCreamItem, isSavedPage, setPrice, setNumber}) => {
     localStorage.removeItem(id);
     setIsSaved(false)
     setPrice(price => {
-      localStorage.setItem(id, price - cost);
+      localStorage.setItem('totalPrice', price - cost);
       return price - cost;
     });
     setNumber(number => { 
-      localStorage.setItem(id, number - 1);
+      localStorage.setItem('totalNumber', number - 1);
       return number - 1;
     });
   }

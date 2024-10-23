@@ -29,8 +29,8 @@ async function fetchData(url) {
 function App() {
   const [allIcecreams, setAllIcecream] = useState([]);
   // const [savedIcecreams, setSavedIcecreams] = useState([]);
-  const [price, setPrice] = useState(localStorage.getItem('totalPrice') || 0);
-  const [number, setNumber] = useState(localStorage.getItem('totalNumber') || 0);
+  const [price, setPrice] = useState(Number(localStorage.getItem('totalPrice')) || 0);
+  const [number, setNumber] = useState(Number(localStorage.getItem('totalNumber')) || 0);
 
   // add isSaved to all items in list
   useEffect(() => {
