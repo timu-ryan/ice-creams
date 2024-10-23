@@ -1,10 +1,8 @@
 import React, { useState } from 'react'
 import './IceCreamItem.css'
 
-// const IceCreamItem = ({id, title, cost, imageSrc, isSaved}) => {
-
 const IceCreamItem = ({iceCreamItem, isSavedPage, setPrice, setNumber}) => {
-  // check is saved!
+  
   const {id, title, cost, image} = iceCreamItem;
   
   const [isSaved, setIsSaved] = useState(localStorage.getItem(id));

@@ -3,7 +3,6 @@ import { NavLink } from 'react-router-dom'
 import './Navigation.css'
 
 const Navigation = () => {
-
   return (
     <section className='navigation'>
       <nav className='navigation__bar'>

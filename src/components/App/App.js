@@ -1,17 +1,16 @@
 import './App.css';
 
 import { Routes, Route } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 
 import Header from '../Header/Header';
 import Navigation from '../Navigation/Navigation';
-import { useEffect, useState } from 'react';
 import IceCreamList from '../IceCreamList/IceCreamList';
 import Footer from '../Footer/Footer';
 import PageNotFound from '../PageNotFound/PageNotFound';
 import ShoppingResult from '../ShoppingResult/ShoppingResult';
 
 const API_URL = 'https://webapi.omoloko.ru/api/v1/products';
-
 
 async function fetchData(url) {
   try {
@@ -28,20 +27,13 @@ async function fetchData(url) {
 
 function App() {
   const [allIcecreams, setAllIcecream] = useState([]);
-  // const [savedIcecreams, setSavedIcecreams] = useState([]);
   const [price, setPrice] = useState(Number(localStorage.getItem('totalPrice')) || 0);
   const [number, setNumber] = useState(Number(localStorage.getItem('totalNumber')) || 0);
 
-  // add isSaved to all items in list
   useEffect(() => {
     fetchData(API_URL).then(data => {
       if (data) {
         setAllIcecream(data.products);
-        // data.products.forEach(icecream => {
-        //   if(localStorage.getItem(icecream.id)) { // if in localStorage => add to saved
-        //     setSavedIcecreams([...savedIcecreams, icecream]);
-        //   }
-        // })
       }
     })
   }, [])
