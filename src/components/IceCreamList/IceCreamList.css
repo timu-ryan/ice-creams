@@ -18,6 +18,12 @@
   border: 1px solid grey;
 }
 
+.show-more-btn:hover {
+  color: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  border-color: rgba(128, 128, 128, 0.7);
+}
+
 @media screen and (width < 1000px) {
   .icecream-list {
     max-width: 800px;

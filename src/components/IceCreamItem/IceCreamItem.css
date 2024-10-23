@@ -33,7 +33,7 @@
   border: none;
 }
 
-.icecream__button:hover {
+.icecream__button:not([disabled]):hover {
   cursor: pointer;
   color: rgba(0, 0, 0, 0.7);
 }
