@@ -25,7 +25,7 @@ const IceCreamItem = ({iceCreamItem, isSavedPage}) => {
       <div className='icecream__text-container'>
         <h3 className='icecream__title'>{title}</h3>
         <div className='icecream__info'>
-          <p className='icecream__price'>{cost}</p>
+          <p className='icecream__price'>Цена: {cost}р</p>
           {!isSavedPage ?
             <button 
               className='icecream__button'

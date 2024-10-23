@@ -27,3 +27,13 @@
   justify-content: space-between;
   align-items: center;
 }
+
+.icecream__button {
+  background-color: transparent;
+  border: none;
+}
+
+.icecream__button:hover {
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.7);
+}
