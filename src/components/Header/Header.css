@@ -1,0 +1,12 @@
+.header {
+  padding: 0 10px;
+  margin: 20px 0 20px;
+}
+
+.header__title {
+  margin: 0;
+  text-align: center;
+  /* font-size: clamp(3.75rem, 2.5rem + 5.5556vw, 7.5rem); */
+  font-size: clamp(1.875rem, 0.8218rem + 4.6809vw, 4.625rem);
+}
+

@@ -1,0 +1,29 @@
+.icecream {
+  width: 300px;
+  border: 1px solid gray;
+}
+
+.icecream__image {
+  max-width: 100%;
+}
+
+.icecream__text-container {
+  padding: 0 10px 0;
+}
+
+.icecream__title {
+  margin: 0;
+  height: 50px;
+}
+
+.icecream__text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.icecream__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

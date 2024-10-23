@@ -1,0 +1,25 @@
+.icecream-list {
+  margin: 0 auto 0;
+  padding: 0;
+  display: grid;
+  max-width: 1000px;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  justify-items: center;
+
+  list-style: none;
+}
+
+@media screen and (width < 1000px) {
+  .icecream-list {
+    max-width: 800px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (width < 620px) {
+  .icecream-list {
+    max-width: 540px;
+    grid-template-columns: 1fr;
+  }
+}
