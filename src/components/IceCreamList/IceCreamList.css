@@ -10,6 +10,32 @@
   list-style: none;
 }
 
+.input {
+  display: block;
+  margin: 0 auto 20px;
+  padding: 0 0 0 5px;
+  width: calc(100% - 30vw + 20px);
+  height: 24px;
+
+  font-family: inherit;
+  color: inherit;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+input:focus {
+  outline-color: black; /* цвет обводки — жёлтый */
+  outline-style: solid;/* стиль линии — прерывистая */
+  outline-width: 1px; /* толщина обводки — 3px */
+}
+
+.input-label {
+  display: block;
+  margin: 0 auto 5px;
+  width: calc(100% - 30vw + 20px);
+}
+
 .show-more-btn {
   margin: 10px 60px;
   height: 30px;
