@@ -1,0 +1,8 @@
+.page-not-found {
+  display: flex;
+  height: 250px;
+}
+
+.page-not-found__title {
+  margin: auto;
+}

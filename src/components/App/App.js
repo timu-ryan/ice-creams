@@ -7,6 +7,7 @@ import Navigation from '../Navigation/Navigation';
 import { useEffect, useState } from 'react';
 import IceCreamList from '../IceCreamList/IceCreamList';
 import Footer from '../Footer/Footer';
+import PageNotFound from '../PageNotFound/PageNotFound';
 
 const API_URL = 'https://webapi.omoloko.ru/api/v1/products';
 
@@ -62,6 +63,11 @@ function App() {
             <IceCreamList list={allIcecreams} isSavedPage={true} />
           </>
         }/>
+        <Route path="*" element={
+          <>
+            <Navigation />
+            <PageNotFound />
+          </>}/>
       </Routes>
       <Footer />
     </div>
