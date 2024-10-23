@@ -6,6 +6,7 @@ import Header from '../Header/Header';
 import Navigation from '../Navigation/Navigation';
 import { useEffect, useState } from 'react';
 import IceCreamList from '../IceCreamList/IceCreamList';
+import Footer from '../Footer/Footer';
 
 const API_URL = 'https://webapi.omoloko.ru/api/v1/products';
 
@@ -62,6 +63,7 @@ function App() {
           </>
         }/>
       </Routes>
+      <Footer />
     </div>
   );
 }

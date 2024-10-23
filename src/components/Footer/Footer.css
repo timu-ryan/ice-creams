@@ -1,0 +1,27 @@
+.footer {
+  border-top: 1px solid grey;
+  padding: 0 0 0 20px;
+}
+
+.footer__title {
+  font-weight: 500;
+  margin: 20px 0 20px;
+}
+
+.footer__address {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 0 0 20px 10px;
+}
+
+.footer__link {
+  color: inherit;
+  text-decoration: none;
+  font-style: normal;
+}
+
+.footer__link:hover {
+  color: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
