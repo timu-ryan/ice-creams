@@ -20,12 +20,12 @@ npm -v
 1. Клонируйте репозиторий на ваш компьютер:
 
 ```bash
-git clone https://github.com/timu-ryan/roboline-task.git
+git clone https://github.com/timu-ryan/ice-creams.git
 ```
 2. Перейдите в папку с проектом:
 
 ```bash
-cd roboline-task
+cd ice-creams
 ```
 3. Установите необходимые зависимости:
 
